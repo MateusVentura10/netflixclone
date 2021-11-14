@@ -1,0 +1,66 @@
+.movieList--content{
+    margin-top:-100px;
+}
+.movieList--area{
+    padding-left:30px;
+}
+.movieList--area > h2{
+    font-size:1.4rem;
+    color:white;
+    font-weight: 700;
+}
+
+.movieList--list{
+    width:9999px;
+    margin-bottom: 30px;
+    transition:0.2s;
+}
+.movieList--list:hover .movieList--left, 
+.movieList--list:hover .movieList--right{
+    opacity:1;
+    transition:0.2s;
+}
+
+.movieList--item{
+    display:inline-block;
+    width:162px;
+    height:200px;
+    overflow:hidden;
+}
+.movieList--item > img{
+    width:100%;
+    height:100%;
+    transform: scale(0.9);
+}
+.movieList--item > img:hover{
+    transform: scale(1);
+    cursor:pointer;
+    transition:0.3s;
+}
+.movieList--left, .movieList--right{
+    position:absolute;
+    z-index:2;
+    background:rgba(0, 0, 0, 0.6);
+    width:38px;
+    height:200px;
+    text-align:center;
+    cursor:pointer;
+    opacity:0;
+}
+.movieList--left > i, .movieList--right > i{
+    font-size:1.5rem;
+    line-height:185px;
+    color:white;
+}
+.movieList--left{
+    left:0;
+}
+.movieList--right{
+    right:0;
+}
+
+@media (max-width: 760px){
+    .movieList--left, .movieList--right{
+        opacity:1;
+    }
+}

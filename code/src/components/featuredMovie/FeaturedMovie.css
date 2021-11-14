@@ -1,0 +1,115 @@
+.featured--area{
+    height:650px;
+}
+.featured--vertical{
+    width:inherit;
+    height:inherit;
+    background:linear-gradient(to top, #111 10%, transparent 90%);
+}
+.featured--horizontal{
+    width:inherit;
+    height:inherit;
+    background:linear-gradient(to right, #111 30%, transparent 70%);
+}
+.featured--info{
+    height:inherit;
+    padding: 0px 30px;
+    margin-top:-30px;
+
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.featured--data{
+    display:block;
+    margin-top:15px;
+}
+.featured--average{
+    color:rgb(118, 204, 118);
+    font-weight: bold;
+    font-size:1.1rem;
+}
+.featured--date, .featured--seasons{
+    color:white;
+    font-weight: bold;
+    font-size:1.1rem;
+    margin-left:10px;
+}
+.featured--title{
+    color:white;
+    font-size:4rem;
+    font-weight: bold;
+}
+.featured--description{
+    color:rgb(153, 152, 152);
+    font-size:1.25rem;
+    max-width:600px;
+    font-weight:300;
+    margin-top:15px;
+}
+.featured--btn{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.featured--btn > a{
+    display:block;
+    padding:13px 30px;
+    border-radius:5px;
+    margin-top:18px;
+
+    font-weight:bold;
+    font-size:1.15rem;
+}
+.featured--btn > a:hover{
+    opacity:0.7;
+    transition:0.3s;
+}
+.featured--watch{
+    margin-right:15px;
+    background:white;
+    color:black;
+}
+.featured--myList{
+    background:rgb(53, 53, 53);
+    color:white;
+}
+.featured--genres{
+    display:flex;
+    align-items:flex-end;
+    color:rgb(153, 152, 152);
+    margin-top:15px;
+}
+.featured--genres > h5{
+    font-size:1.1rem;
+}
+.featured--genres > span{
+    font-size:1.1rem;
+    margin-left:10px;
+}
+
+
+@media (max-width: 760px){
+    .featured--area{
+        height:550px;
+    }
+    .featured--info{
+        margin-top:0;
+    }
+    .featured--title{
+        font-size:2.2rem;
+    }
+    .featured--date, .featured--seasons, .featured--average{
+        font-size:16px;
+    }
+    .featured--description{
+        width:100%;
+        font-size:16px;
+    }
+    .featured--btn > a{
+        font-size:16px;
+    }
+    .featured--genres > h5, .featured--genres > span{
+        font-size:16px;
+    }
+}

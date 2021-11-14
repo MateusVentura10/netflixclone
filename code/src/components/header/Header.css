@@ -1,0 +1,29 @@
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:17px 30px;
+    z-index:999;
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    transition:0.5s;
+}
+.logo{
+    width:120px;
+}
+.logo > img{
+    width:100%;
+}
+.user{
+    width:45px;
+    height:45px;
+    margin-right:60px;
+    overflow:hidden;
+}
+.user > img{
+    width:100%;
+    border-radius:5px;
+}
